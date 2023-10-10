@@ -9,15 +9,17 @@ import { TbBrandDjango, TbBrandTypescript } from "react-icons/tb";
 
 export default function Home() {
   return (
-    <div className=" h-screen w-screen flex items-center justify-center bg-zinc-700">
-      <Card />
+    <div className=" h-screen w-screen flex items-center justify-center bg-zinc-700 ">
+      <div className=" m-20  flex items-center justify-center">
+        <Card />
+      </div>
     </div>
   );
 }
 
 const Card = () => {
   return (
-    <div className="rounded-2xl w-2/5 h-auto overflow-hidden bg-zinc-800 shadow-xl">
+    <div className="rounded-2xl w-2/5 h-auto overflow-hidden bg-zinc-800 shadow-xl ">
       <img
         src={image.src}
         alt="James Fitzsimons"
