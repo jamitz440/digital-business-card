@@ -20,9 +20,11 @@ export default function Home() {
 const Card = () => {
   return (
     <div className="rounded-2xl w-2/5 h-auto overflow-hidden bg-zinc-800 shadow-xl ">
-      <img
+      <Image
         src={image.src}
         alt="James Fitzsimons"
+        width={500}
+        height={500}
         style={{ objectFit: "cover", width: "100%", height: "100%" }}
       />
       <CardDetails />
