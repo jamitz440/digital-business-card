@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 
-export default function useDarkSide() {
+export default function useDarkSide(): [
+  string | undefined,
+  React.Dispatch<React.SetStateAction<string | undefined>>
+] {
   // Start with an undefined theme and update once we can access localStorage
   const [theme, setTheme] = useState<string | undefined>();
 

@@ -123,12 +123,13 @@ const InfoBox = () => {
       </div>
       <div className="flex-wrap flex h-auto max-w-3xl md:max-w-6xl dark:text-white text-gray-800">
         I am an A Tech (Av) by trade with a passion for coding. I got into web
-        development because I love the flexibility it offers – there's always
-        more than one way to solve a problem or create something cool. My
+        development because I love the flexibility it offers – there&apos;s
+        always more than one way to solve a problem or create something cool. My
         experience includes developing engineering programs for aircraft, even
-        though I haven't put any of that work out in the public domain. I tackle
-        challenges head-on, believing there's a solution to every problem. When
-        I'm not coding, I'm usually gaming or experimenting with my 3D printer.
+        though I haven&apos;t put any of that work out in the public domain. I
+        tackle challenges head-on, believing there&apos;s a solution to every
+        problem. When I&apos;m not coding, I&apos;m usually gaming or
+        experimenting with my 3D printer.
       </div>
     </div>
   );
