@@ -5,7 +5,7 @@ import { DarkModeSwitch } from "react-toggle-dark-mode";
 export default function Switcher() {
   const [colorTheme, setTheme] = useDarkSide();
   const [darkSide, setDarkSide] = useState(
-    colorTheme === "light" ? true : false
+    colorTheme === "light" ? false : true
   );
 
   const toggleDarkMode = (checked: any) => {
