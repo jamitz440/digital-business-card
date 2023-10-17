@@ -17,7 +17,7 @@ import { CardDetails } from "./CardDetails";
 export default function Home() {
   return (
     <div className=" h-screen w-screen flex items-center justify-center bg-text">
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center lg:w-3/5 xl:w-1/2 w-full m-8 md:m-16 ">
         <Card />
       </div>
     </div>
@@ -27,7 +27,7 @@ export default function Home() {
 const Card = () => {
   return (
     <>
-      <div className="relative  rounded-2xl lg:w-3/5 xl:w-1/2 w-full m-8 md:m-16  bg-background shadow-lg dark:shadow-accent-100 dark:shadow-md ">
+      <div className="relative  rounded-2xl  bg-background shadow-lg dark:shadow-accent-100 dark:shadow-md ">
         <div className="max-w-[1200px]">
           <div className=" col-span-1 absolute w-48 -top-24 left-1/2 -translate-x-[96px]">
             <ImageCard />
@@ -52,7 +52,7 @@ const Card = () => {
           </div>
           <div className="text-xl flex justify-around items-center ">
             <Icon text="Python">
-              <FaPython className="text-3xl" />
+              <FaPython className="text-3xl " />
             </Icon>
             <Icon text="Django">
               <TbBrandDjango className="text-3xl" />
@@ -83,7 +83,7 @@ const Button: FC<ButtonProps> = ({ children, text, link }) => {
       className="bg-primary text-text  font-bold py-2 px-4 rounded-lg w-1/4 h-auto hover:scale-105 transition-all duration-300"
     >
       <div className="flex items-center gap-2 justify-center">
-        {children}
+        <span className="hidden sm:block">{children}</span>
         {text}
       </div>
     </a>
@@ -97,7 +97,7 @@ const EmailButton: FC<ButtonProps> = ({ children, text, link }) => {
       className="bg-primary text-text font-bold py-2 px-4 rounded-lg w-1/4 h-auto hover:scale-105 transition-all duration-300"
     >
       <div className="flex items-center gap-2 justify-center">
-        {children}
+        <span className="hidden sm:block">{children}</span>
         {text}
       </div>
     </a>
@@ -108,8 +108,8 @@ const InfoBox = () => {
   return (
     <div className="md:mx-12 md:my-8 mx-8 my-8">
       <h1 className="font-bold text-lg flex-wrap text-text-900">About</h1>
-      <div className="flex-wrap flex h-auto max-w-3xl md:max-w-6xl text-text-800">
-        <p className="">
+      <div className="flex-wrap flex h-auto max-w-3xl md:max-w-6xl text-text-800 ">
+        <p className="sm:line-clamp-none line-clamp-5">
           I am an A Tech (Av) by trade with a passion for coding. I got into web
           development because I love the flexibility it offers – there&apos;s
           always more than one way to solve a problem or create something cool.
