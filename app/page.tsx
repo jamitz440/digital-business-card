@@ -80,7 +80,7 @@ const Button: FC<ButtonProps> = ({ children, text, link }) => {
   return (
     <a
       href={link}
-      className="bg-primary text-text  font-bold py-2 px-4 rounded-lg w-1/4 h-auto hover:scale-105 transition-all duration-300"
+      className="bg-primary text-text text-sm sm:text-base font-bold py-2 px-4 rounded-lg sm:w-1/4 w-1/5 h-auto hover:scale-105 transition-all duration-300 items-center text-center flex justify-center"
     >
       <div className="flex items-center gap-2 justify-center">
         <span className="hidden sm:block">{children}</span>
@@ -94,7 +94,7 @@ const EmailButton: FC<ButtonProps> = ({ children, text, link }) => {
   return (
     <a
       href={`mailto:${link}`}
-      className="bg-primary text-text font-bold py-2 px-4 rounded-lg w-1/4 h-auto hover:scale-105 transition-all duration-300"
+      className="bg-primary text-text text-sm sm:text-base font-bold py-2 px-4 rounded-lg sm:w-1/4 w-1/5 h-auto hover:scale-105 transition-all duration-300 items-center text-center flex justify-center"
     >
       <div className="flex items-center gap-2 justify-center">
         <span className="hidden sm:block">{children}</span>
@@ -108,8 +108,8 @@ const InfoBox = () => {
   return (
     <div className="md:mx-12 md:my-8 mx-8 my-8">
       <h1 className="font-bold text-lg flex-wrap text-text-900">About</h1>
-      <div className="flex-wrap flex h-auto max-w-3xl md:max-w-6xl text-text-800 ">
-        <p className="sm:line-clamp-none line-clamp-5">
+      <div className="flex-wrap flex h-[150px] sm:h-[200px] max-w-3xl md:max-w-6xl text-text ">
+        <p className="sm:line-clamp-none line-clamp-5 overflow-auto text-xs sm:text-base md:text-lg">
           I am an A Tech (Av) by trade with a passion for coding. I got into web
           development because I love the flexibility it offers – there&apos;s
           always more than one way to solve a problem or create something cool.
