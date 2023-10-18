@@ -50,7 +50,7 @@ const Card = () => {
           <div className="">
             <InfoBox />
           </div>
-          <div className="text-xl flex justify-around items-center ">
+          <div className="text-xl flex justify-around items-center mt-4">
             <Icon text="Python">
               <FaPython className="text-3xl " />
             </Icon>
