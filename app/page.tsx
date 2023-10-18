@@ -33,7 +33,7 @@ const Card = () => {
             <ImageCard />
           </div>
           <CardDetails />
-          <div className="flex justify-around flex-wrap mt-6">
+          <div className="flex justify-around flex-wrap mt-4">
             <EmailButton text="Email" link="jamster44085@gmail.com">
               <FaEnvelope />
             </EmailButton>
